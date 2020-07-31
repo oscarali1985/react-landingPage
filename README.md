@@ -9,8 +9,8 @@ This template is similar to create-react-app but it's meant for 4Geeks Academy s
 ##### Download the boilerplate using git
 
 ```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
+$ git clone https://github.com/oscarali1985/react-landingPage.git
+$ cd react-landingPage
 ```
 
 ##### and install the npm package:
