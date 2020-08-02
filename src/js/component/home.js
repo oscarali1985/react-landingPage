@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import img500 from "../../img/500x325.png";
 import { Card } from "./Card";
+import { Jumbotron } from "./Jumbotron";
 
 //create your first component
 export function Home(props) {
@@ -70,6 +71,9 @@ export function Home(props) {
 					/>
 				);
 			})}
+
+			<Jumbotron />
+
 			<div className="row">
 				<div className="col">
 					<Card />
