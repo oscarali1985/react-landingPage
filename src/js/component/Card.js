@@ -1,14 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const Card = ({ name, color = "lightgray", imagen }) => {
+import img500 from "../../img/500x325.png";
+
+export const Card = ({
+	name = "Card title",
+	color = "white",
+	imagen = img500
+}) => {
 	return (
 		<div
-			className={"c" + "a" + "r" + "d" + " mx-auto my-4"}
+			className={"c" + "a" + "r" + "d" + " mx-auto my-4 "}
 			style={{
 				width: "18rem",
 				backgroundColor: color,
-				color: "white"
+				color: "black",
+				textAlign: "center"
 			}}>
 			<img
 				src={imagen}
@@ -18,10 +25,10 @@ export const Card = ({ name, color = "lightgray", imagen }) => {
 			<div className="card-body">
 				<h5 className="card-title">{name}</h5>
 				<p className="card-text">
-					{`Soy el profesor de esta cohorte.`}
+					{`Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore modi veniam repellendus soluta eligendi quos voluptates illum quam aperiam?`}
 				</p>
 				<a href="#" className="btn btn-primary">
-					Go somewhere
+					Find Out More!
 				</a>
 			</div>
 		</div>

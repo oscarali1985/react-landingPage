@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import img500 from "../../img/500x325.png";
 import { Card } from "./Card";
 
 //create your first component
@@ -11,7 +12,7 @@ export function Home(props) {
 	const [name, setName] = useState("");
 	const [color, setColor] = useState("");
 	return (
-		<div className="row">
+		<div>
 			<label htmlFor="name">{"Nombre:"}</label>
 			<input
 				type="text"
@@ -65,10 +66,24 @@ export function Home(props) {
 						key={index}
 						name={person.name}
 						color={person.color}
-						imagen={rigoImage}
+						imagen={img500}
 					/>
 				);
 			})}
+			<div className="row">
+				<div className="col">
+					<Card />
+				</div>
+				<div className="col">
+					<Card />
+				</div>
+				<div className="col">
+					<Card />
+				</div>
+				<div className="col">
+					<Card />
+				</div>
+			</div>
 		</div>
 	);
 }
