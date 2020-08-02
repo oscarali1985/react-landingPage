@@ -10,7 +10,7 @@ export const Card = ({
 }) => {
 	return (
 		<div
-			className={"card mx-2 my-2 w-100"}
+			className={"card w-100"}
 			style={{
 				width: "18rem",
 				backgroundColor: color,
