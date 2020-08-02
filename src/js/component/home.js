@@ -5,6 +5,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import img500 from "../../img/500x325.png";
 import { Card } from "./Card";
 import { Jumbotron } from "./Jumbotron";
+import { Footer } from "./Footer";
 
 //create your first component
 export function Home(props) {
@@ -13,10 +14,10 @@ export function Home(props) {
 	const [name, setName] = useState("");
 	const [color, setColor] = useState("");
 	return (
-		<div>
+		<div className="container">
 			<Jumbotron />
 
-			<div className="row">
+			<div className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
 				<div className="col">
 					<Card />
 				</div>
@@ -30,6 +31,7 @@ export function Home(props) {
 					<Card />
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
