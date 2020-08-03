@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Navbar } from "./navbar";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -15,6 +16,7 @@ export function Home(props) {
 	const [color, setColor] = useState("");
 	return (
 		<div>
+			<Navbar />
 			<Container />
 			<Footer />
 		</div>
